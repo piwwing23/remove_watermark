@@ -1,13 +1,2 @@
-<<<<<<< HEAD
 core.py
 build/
-=======
-venv/
-build/
-__pycache__/
-*.pyc
-*.pyo
-*.spec
-main.py
-_loader.py
->>>>>>> 1963cec6233f889215b39241dffb320ffc7b5939
