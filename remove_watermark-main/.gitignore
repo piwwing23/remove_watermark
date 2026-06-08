@@ -1,8 +1,0 @@
-venv/
-build/
-__pycache__/
-*.pyc
-*.pyo
-*.spec
-main.py
-_loader.py
