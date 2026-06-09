@@ -67,8 +67,10 @@ python3 src/main.py /sdcard/Download/gambar_saya.jpg
 *Hasil pemrosesan akan otomatis tersimpan di lokasi yang sama dengan lokasi file gambar asli.*
 
 ## 🔐 Catatan Teknis
-- **Keamanan**: Alat ini menggunakan modul terkompilasi (`.so`) untuk melindungi algoritma dari modifikasi/pencurian.
-- **Portabilitas**: Jika Anda memindahkan proyek ini ke perangkat lain, **wajib** melakukan kompilasi ulang (langkah Instalasi nomor 3) karena biner `.so` spesifik untuk arsitektur CPU perangkat Anda.
+- **Arsitektur Kompilasi**: Proyek ini menggunakan **Cython** untuk mengompilasi logika pemrosesan dari Python ke modul biner (`.so`).
+- **Keamanan & Performa**: Penggunaan modul biner bertujuan untuk mengaburkan algoritma inti (*code obfuscation*) guna mencegah *reverse engineering* yang mudah, serta meningkatkan performa eksekusi dibandingkan skrip Python murni.
+- **Portabilitas**: Modul biner (`core.so`) yang dihasilkan bersifat *platform-specific*. Hal ini berarti file tersebut hanya dapat berjalan pada arsitektur CPU dan versi Python yang sama dengan tempat kompilasi dilakukan. Jika Anda memindahkan proyek ini ke perangkat lain, **wajib** melakukan kompilasi ulang (langkah Instalasi nomor 3) agar kompatibel dengan lingkungan baru.
+- **Auditabilitas**: Karena logika utama dikompilasi ke dalam biner, komponen tersebut tidak dapat dibaca sebagai teks biasa. Pengguna hanya dapat memverifikasi alur kerja melalui file `main.py` yang bertindak sebagai *loader*.
 
 ## ⚠️ Disclaimer
 Alat ini ditujukan untuk tujuan edukasi dan penggunaan pribadi. Pengguna bertanggung jawab sepenuhnya atas penggunaan perangkat lunak ini sesuai dengan hukum dan kebijakan hak cipta yang berlaku.
