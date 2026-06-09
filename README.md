@@ -1,6 +1,6 @@
 # Watermark Remover
 
-Alat penghapus watermark otomatis berbasis biner (terkompilasi).
+Alat penghapus watermark pada gambar otomatis.
 
 ## 🚀 Persiapan Pengguna Termux Baru (PENTING)
 Jika Anda baru saja menginstal Termux, Anda **wajib** melakukan langkah-langkah di bawah ini:
@@ -60,7 +60,7 @@ python3 src/main.py /sdcard/Download/gambar_saya.jpg
 *Hasil pemrosesan akan otomatis tersimpan di lokasi yang sama dengan lokasi file gambar asli.*
 
 ## 🔐 Catatan Teknis
-Kode inti aplikasi ini telah dikompilasi menjadi biner untuk **mencegah modifikasi dari luar** serta menjaga integritas dan keaslian algoritma agar tidak bisa diubah atau disalahgunakan.
+Kode inti aplikasi ini telah dikompilasi untuk **mencegah modifikasi dari luar** serta menjaga agar tidak bisa diubah atau disalahgunakan.
 
 ## ⚠️ Disclaimer
 Alat ini ditujukan untuk tujuan edukasi dan penggunaan pribadi. Pengguna bertanggung jawab sepenuhnya atas penggunaan perangkat lunak ini sesuai dengan hukum dan kebijakan hak cipta yang berlaku.
