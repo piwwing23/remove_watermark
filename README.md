@@ -1,6 +1,6 @@
 # Watermark Remover
 
-Alat penghapus watermark pada gambar otomatis.
+Alat penghapus watermark pada gambar otomatis. 
 
 ## 🚀 Persiapan Pengguna Termux Baru (PENTING)
 Jika Anda baru saja menginstal Termux, Anda **wajib** melakukan langkah-langkah di bawah ini:
