@@ -51,18 +51,13 @@ Jika Anda baru saja menginstal Termux, Anda **wajib** melakukan langkah-langkah 
 
 Pastikan file `src/main.py` dan `src/core.so` berada di folder `src/`. Jalankan aplikasi dari direktori utama proyek:
 
-**Contoh penggunaan:**
+**Contoh penggunaan (Gambar di dalam folder src):**
 ```bash
-python3 src/main.py gambar.jpg
+python3 src/main.py src/gambar.jpg
 ```
 
 ### 📂 Menangani Gambar di Direktori Berbeda
-Jika gambar yang ingin diproses **tidak berada** di folder `src/`, Anda **wajib** menggunakan *full path* (lokasi lengkap) gambar tersebut agar tidak terjadi error `FileNotFoundError`:
-
-**Contoh jika gambar ada di folder utama:**
-```bash
-python3 src/main.py gambar.jpg
-```
+Jika gambar yang ingin diproses berada di lokasi lain, Anda **wajib** menggunakan *full path* (lokasi lengkap) gambar tersebut agar tidak terjadi error `FileNotFoundError`:
 
 **Contoh jika gambar ada di folder Downloads (Penyimpanan Internal):**
 ```bash
