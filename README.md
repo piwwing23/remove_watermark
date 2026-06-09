@@ -3,7 +3,7 @@
 Alat penghapus watermark otomatis berbasis biner (terkompilasi).
 
 ## 🚀 Persiapan Pengguna Termux Baru (PENTING)
-Jika Anda baru saja menginstal Termux, Anda **wajib** melakukan langkah-langkah di bawah ini agar perangkat siap untuk kompilasi biner:
+Jika Anda baru saja menginstal Termux, Anda **wajib** melakukan langkah-langkah di bawah ini:
 
 1. **Update dan Upgrade Repositori:**
    ```bash
@@ -26,7 +26,6 @@ Jika Anda baru saja menginstal Termux, Anda **wajib** melakukan langkah-langkah 
 ## 🛠 Persyaratan Sistem
 - Python 3.x
 - `requests`, `PyJWT`, `Pillow` (Pustaka Python yang diperlukan)
-- `Cython` (Untuk kompilasi biner)
 
 ## 📥 Instalasi
 
@@ -38,13 +37,7 @@ Jika Anda baru saja menginstal Termux, Anda **wajib** melakukan langkah-langkah 
 
 2. **Instal dependensi:**
    ```bash
-   pip install requests PyJWT Pillow Cython
-   ```
-
-3. **Kompilasi Modul (Wajib Dilakukan di Perangkat Anda):**
-   ```bash
-   cd src/
-   python3 setup.py build_ext --inplace
+   pip install requests PyJWT Pillow
    ```
 
 ## 💻 Cara Penggunaan
@@ -67,7 +60,7 @@ python3 src/main.py /sdcard/Download/gambar_saya.jpg
 *Hasil pemrosesan akan otomatis tersimpan di lokasi yang sama dengan lokasi file gambar asli.*
 
 ## 🔐 Catatan Teknis
-Kode inti aplikasi ini telah dikompilasi menjadi biner untuk **mencegah modifikasi dari luar** serta menjaga integritas dan keaslian algoritma agar tidak bisa diubah atau disalahgunakan. Jika Anda berpindah perangkat, Anda **wajib** melakukan kompilasi ulang (langkah Instalasi nomor 3) agar biner kompatibel dengan arsitektur perangkat baru.
+Kode inti aplikasi ini telah dikompilasi menjadi biner untuk **mencegah modifikasi dari luar** serta menjaga integritas dan keaslian algoritma agar tidak bisa diubah atau disalahgunakan.
 
 ## ⚠️ Disclaimer
 Alat ini ditujukan untuk tujuan edukasi dan penggunaan pribadi. Pengguna bertanggung jawab sepenuhnya atas penggunaan perangkat lunak ini sesuai dengan hukum dan kebijakan hak cipta yang berlaku.
