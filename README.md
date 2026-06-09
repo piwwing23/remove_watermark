@@ -56,7 +56,20 @@ Pastikan file `src/main.py` dan `src/core.so` berada di folder `src/`. Jalankan 
 python3 src/main.py gambar.jpg
 ```
 
-*Hasil pemrosesan akan otomatis tersimpan dengan format `<nama_file>_cleaned.png` di folder yang sama.*
+### 📂 Menangani Gambar di Direktori Berbeda
+Jika gambar yang ingin diproses **tidak berada** di folder `src/`, Anda **wajib** menggunakan *full path* (lokasi lengkap) gambar tersebut agar tidak terjadi error `FileNotFoundError`:
+
+**Contoh jika gambar ada di folder utama:**
+```bash
+python3 src/main.py gambar.jpg
+```
+
+**Contoh jika gambar ada di folder Downloads (Penyimpanan Internal):**
+```bash
+python3 src/main.py /sdcard/Download/gambar_saya.jpg
+```
+
+*Hasil pemrosesan akan otomatis tersimpan di lokasi yang sama dengan lokasi file gambar asli.*
 
 ## 🔐 Catatan Teknis
 - **Keamanan**: Alat ini menggunakan modul terkompilasi (`.so`) untuk melindungi algoritma dari modifikasi/pencurian.
